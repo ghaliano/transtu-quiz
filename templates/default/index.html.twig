@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des quizs!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Liste des quizs!</h1>
+
+    <ul>
+        {% for quiz in quizs %}
+        <li><a href="{{ path('exam', {id: quiz.id}) }}">{{ quiz.name }}</a></code></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
