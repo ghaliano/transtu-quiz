@@ -17,7 +17,7 @@
             <input 
             value="{{ answer.id }}"
             type="{{ question.isMultiple()?"checkbox":"radio" }}" 
-            name="response[{{question.id}}][{{question.isMultiple()?answer.id:''}}]" 
+            name="responses[{{question.id}}][{{question.isMultiple()?answer.id:''}}]" 
             
             />
             </li>
